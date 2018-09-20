@@ -276,6 +276,7 @@ int main(int argc, char *argv[]) {
 			// Else timeout occurred
 		} else if(timeout == debounceTime) { // Button debounce timeout
 			if(pressed) {
+				(void)system("wall Shuting down system due to GPIO!");
 				(void)system("shutdown -h now");
 				running = 0;
 			}
